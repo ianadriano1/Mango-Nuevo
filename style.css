@@ -555,10 +555,10 @@ footer::before {
     display: flex;
     align-items: flex-start;
   }
-  header .navigation-items ul li a {
-    /* display: inline;
-    padding: 800p 0; */
-  }
+  /* header .navigation-items ul li a {
+    display: inline;
+    padding: 800p 0;
+  } */
   header .navigation-items ul li a::before {
     content: "";
     position: absolute;
@@ -959,9 +959,9 @@ footer::before {
   footer ul {
     margin-left: 0px;
   }
-  footer ul li {
-    /*  margin-bottom: 20px; */
-  }
+  /* footer ul li {
+     margin-bottom: 20px;
+  } */
   footer ul li a {
     text-decoration: none;
     color: #fff;
@@ -999,9 +999,9 @@ footer::before {
   footer ul {
     margin-left: 0px;
   }
-  footer ul li {
-    /*  margin-bottom: 20px; */
-  }
+  /*  footer ul li {
+     margin-bottom: 20px;
+  } */
   footer ul li a {
     text-decoration: none;
     color: #fff;
