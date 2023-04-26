@@ -35,21 +35,26 @@
   </head>
   <body>
     <main class="app">
-      <header data-aos="fade-up">
-        <div class="left-menu">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="">Our beauty</a></li>
-            <li><a href="">Nuestros Productos</a></li>
-          </ul>
-        </div>
-        <div class="logo">MANGO</div>
-        <div class="right-menu">
-          <ul>
-            <li><a href="">Nuestra Historia</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Ingresa</a></li>
-          </ul>
+      <div class="menu-btn"></div>
+
+      <header class="navigation" data-aos="fade-up">
+        <!-- <div class="navigation-items"> -->
+          <div class="left-menu raya 1">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="">Our beauty</a></li>
+              <li><a href="">Nuestros Productos</a></li>
+            </ul>
+          </div>
+          <!--  <div class="logo logo720">MANGO</div> -->
+          <div class="logo 1">MANGO</div>
+          <div class="right-menu raya 1">
+            <ul>
+              <li><a href="">Nuestra Historia</a></li>
+              <li><a href="">Contacto</a></li>
+              <li><a href="">Ingresa</a></li>
+            </ul>
+          </div>
         </div>
       </header>
       <div class="home">
@@ -240,7 +245,7 @@
                 </div>
               </div>
               <div class="box">
-                <h6>Capping + Esmaltado</h6>
+                <h6>Kapping + Esmaltado</h6>
                 <div class="img">
                   <img
                     src="img/uñas/291993462_3196660680608203_8973906679059840340_n.jpg"
@@ -323,5 +328,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script type="text/javascript">
+    //javascript of responsive navigationm menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+  </script>
   <script src="index.js"></script>
 </html>
