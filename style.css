@@ -3,6 +3,9 @@
 /* font-family: 'Fournier MT Std', sans-serif; */
 @import url("https://fonts.cdnfonts.com/css/walbaum-60pt");
 /* font-family: 'Walbaum 60pt', sans-serif; */
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -981,6 +984,24 @@ footer::before {
   }
 }
 @media only screen and (max-width: 460px) {
+  .banner {
+    height: 100vh;
+    background: url(img/hero-image.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+  }
+  .banner .text {
+    text-align: center;
+    padding-bottom: 1.25rem;
+  }
+  .banner h1 {
+    line-height: 6rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
   .btn-primary {
     margin-right: 0%;
   }
