@@ -986,20 +986,15 @@ footer::before {
 @media only screen and (max-width: 460px) {
   .banner {
     height: 100vh;
-    background: url(img/hero-image.jpg);
-    background-size: cover;
-    background-position: top;
-    display: flex;
-    align-items: flex-end;
   }
   .banner .text {
     text-align: center;
-    padding-bottom: 1.25rem;
+    padding-bottom: -1rem;
+    margin-bottom: -12vh;
   }
   .banner h1 {
     line-height: 6rem;
     font-weight: 300;
-    margin-bottom: 2rem;
   }
 
   .btn-primary {
@@ -1007,7 +1002,7 @@ footer::before {
   }
   footer {
     position: relative;
-    padding: 0 0;
+    padding: 0;
   }
   .footer-inner {
     display: flex;
@@ -1018,7 +1013,7 @@ footer::before {
     padding-right: 10px;
   }
   footer ul {
-    margin-left: 0px;
+    margin-left: px;
   }
   /*  footer ul li {
      margin-bottom: 20px;
