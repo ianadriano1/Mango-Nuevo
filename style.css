@@ -370,19 +370,14 @@ header .navigation-items ul li a:hover::before {
   justify-content: space-between;
   margin-top: 5.6rem;
 }
-.box .img img {
-  width: 100%;
-  height: auto;
-  align-items: center;
-  /*  border: 1px solid #fff; */
-  /* top: 5000px; */
-}
+
 .box {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 23%;
+  height: 23vh;
   min-height: 17rem;
   margin-bottom: 2.5rem;
   overflow: hidden;
@@ -390,22 +385,43 @@ header .navigation-items ul li a:hover::before {
 }
 .box h6 {
   /* font-family: ; */
+  position: absolute;
   font-size: 1.3rem;
   font-weight: 400;
 }
 .sec4-boxes .img {
-  position: absolute;
+  position: relative; /* EST ESTABA EN ABSOLUTE */
   top: 0;
   left: 0;
   z-index: -1;
   opacity: 0;
   transition: all ease 1s;
+  width: 100%;
+  height: 100%; /* WIDTH Y HEIGTH NO ESTABAN */
 }
 .box:hover .img {
   opacity: 1;
 }
 .box:hover h6 {
   font-size: 0;
+}
+.box .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 60%; /* OBJECT FIT Y POSITION NO ESTABAN */
+  /* align-items: center; */ /* este estaba  */
+  /* object-fit: cover;
+  object-position: 90% 90%; */
+  /*  border: 1px solid #fff; */
+  /* top: 5000px; */
+}
+.box .img2 img {
+  /* este no estaba lol */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0%;
 }
 
 footer {
@@ -701,9 +717,10 @@ footer::before {
   }
   .box .img img {
     width: 100%;
-    height: auto;
-    align-items: center;
-    object-position: center;
+    height: 100%;
+    /* align-items: center; */
+    object-fit: cover;
+    object-position: 0 60%;
     /*  border: 1px solid #fff; */
     /* top: 5000px; */
   }
@@ -942,12 +959,18 @@ footer::before {
     font-weight: 400;
   }
   .box .img img {
+    /* CAMBIE ESTO PARA QUE SE VEA CENTRADOPRE */
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     align-items: center;
     object-position: center;
     /*  border: 1px solid #fff; */
     /* top: 5000px; */
+  }
+  .box .img2 img {
+    /* cambie esto para que se vea bien la foto */
+    object-position: 0 0;
   }
   /* cambios sec4 fin */
   /* footer cambios */
