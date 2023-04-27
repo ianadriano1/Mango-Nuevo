@@ -451,7 +451,7 @@ footer::before {
 .logo-2 {
   font-family: "Walbaum 60pt", sans-serif;
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 3vw;
   letter-spacing: 1rem; /*Espaciado entre letra y letra */
   color: #f97822;
 }
@@ -990,11 +990,12 @@ footer::before {
   .banner .text {
     text-align: center;
     padding-bottom: -1rem;
-    margin-bottom: -12vh;
+    margin-bottom: -9vh;
   }
   .banner h1 {
-    line-height: 6rem;
+    line-height: 10vh;
     font-weight: 300;
+    font-size: 17vw;
   }
 
   .btn-primary {
@@ -1030,4 +1031,41 @@ footer::before {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .logo-2 {
+    font-family: "Walbaum 60pt", sans-serif;
+    font-weight: 800;
+    font-size: 17vw;
+    letter-spacing: 1rem; /*Espaciado entre letra y letra */
+    color: #f97822;
+  }
 }
+@media only screen and (max-width: 400px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner .text {
+    text-align: center;
+    padding-bottom: -1rem;
+    margin-bottom: -20vh;
+  }
+  .banner h1 {
+    line-height: 10vh;
+    font-weight: 300;
+    font-size: 17vw;
+  }
+}
+/* @media only screen and (max-width: 376px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner .text {
+    text-align: center;
+    padding-bottom: -1rem;
+    margin-bottom: -30vh;
+  }
+  .banner h1 {
+    line-height: 3rem;
+    font-weight: 300;
+    font-size: 17vw;
+  }
+} */
