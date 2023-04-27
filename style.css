@@ -136,6 +136,8 @@ header .navigation-items ul li a:hover::before {
   z-index: 9;
   margin-top: 3.5rem;
   transition: all ease 0.5s;
+  margin-right: auto;
+  margin-left: auto;
 }
 .btn:before {
   content: "";
@@ -882,8 +884,8 @@ footer::before {
     line-height: 4rem;
     z-index: 9;
     margin-top: 1.5rem;
-    margin-bottom: 10%;
-    margin-right: 10%;
+    margin-bottom: auto;
+    margin-right: auto;
     transition: all ease 0.5s;
   }
   /* cambios sec4 */
@@ -1001,7 +1003,8 @@ footer::before {
   }
 
   .btn-primary {
-    margin-right: 0%;
+    margin-left: auto;
+    margin-right: auto;
   }
   footer {
     position: relative;
@@ -1054,6 +1057,9 @@ footer::before {
     line-height: 10vh;
     font-weight: 300;
     font-size: 17vw;
+  }
+  .leftlogo {
+    font-size: 13vw;
   }
 }
 /* @media only screen and (max-width: 376px) {
