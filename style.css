@@ -44,31 +44,31 @@ header {
   width: 100%;
   padding: 10px 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   z-index: 9;
 }
 .navigation-items {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   z-index: 99;
 }
 .right-menu {
-  margin-right: -40px;
+  margin-right: 6vw;
 }
 
 header .navigation-items ul li {
   list-style: none;
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 50px;
 }
 header .navigation-items ul li a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1vw;
   position: relative;
 }
 
@@ -157,12 +157,12 @@ header .navigation-items ul li a:hover::before {
   height: 100%;
 }
 .brand-logo {
-  padding: 20px 0;
+  padding: 1.3rem 0;
 }
 .brand-logo-inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -468,7 +468,8 @@ footer::before {
     margin: 0 10px;
   }
   header .navigation-items ul li a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin-right: 3vw;
   }
 }
 @media only screen and (max-width: 1350px) {
@@ -476,7 +477,7 @@ footer::before {
     margin: 0 6px;
   }
   header .navigation-items ul li a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -484,13 +485,14 @@ footer::before {
     margin: 0 5px;
   }
   header .navigation-items ul li a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 1040px) {
   .rmenu {
     display: flex;
-    height: 100%;
+    height: 50vh;
+    /* width: -100vw; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -522,7 +524,7 @@ footer::before {
   header {
     display: none;
   }
-  header.navigation.active {
+  header.active {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -534,13 +536,13 @@ footer::before {
     background: rgba(1, 1, 1, 0.5);
   }
   header .navigation-items {
-    background-color: #fff;
-    width: 600px;
+    background-color: #ffffff;
+    width: 95vw;
     max-width: 600px;
     /* height: 70vh; */
-    max-width: 600px;
-    margin: 20px;
-    padding: 40px;
+    /* max-width: 600px; */
+    margin: 1rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
