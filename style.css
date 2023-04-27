@@ -744,6 +744,8 @@ footer::before {
     /* font-family: ; */
     font-size: 1.5rem;
     font-weight: 400;
+
+    text-align: center;
   }
   .box .img img {
     width: 100%;
