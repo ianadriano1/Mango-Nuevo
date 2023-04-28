@@ -933,7 +933,7 @@ footer::before {
     line-height: 4rem;
     z-index: 9;
     margin-top: 1.5rem;
-    margin-bottom: auto;
+    margin-bottom: 1rem;
     margin-right: auto;
     transition: all ease 0.5s;
   }
